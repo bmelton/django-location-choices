@@ -1,17 +1,15 @@
-django-location-choices
+django_location_choices
 =======================
-
-A simple tuple with Django locations 
 
 Installation
 ===
 
-Clone the repository.  
+`pip install django_location_choices`
 
 Usage
 ===
 
-`from django-location-choices.locations import COUNTRY_CHOICES, STATE_CHOICES`
+`from django_location_choices.locations import COUNTRY_CHOICES, STATE_CHOICES`
 
 In your models, just reference those values for your CHOICES fields. 
 
