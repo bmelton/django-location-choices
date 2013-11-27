@@ -98,20 +98,19 @@ def find_package_data(
 
 
 README = """
-Technopedia is a Django based project for deploying common Technopedia features.
+Django location choices is a simple tuple, prepopulated with countries and states for use in Django models as CHOICES values
 """
-VERSION = __import__("technopedia").__version__
+VERSION = __import__("django-location-choices").__version__
 
 setup(
-    name = "technopedia",
+    name = "django-location-choices",
     version = VERSION,
-    url = 'http://technopedia.com',
-    description = "Technopedia is a Django based project for deploying common Technopedia features.",
+    url = 'http://github.com/bmelton/django-location-choices/',
+    description = "Django location choices is a simple tuple, prepopulated with countries and states for use in Django models as CHOICES values",
     long_description = README,
-    author = 'Barry Melton, Josh Boles',
-    author_email = 'bmelton@bdna.com, josh@servee.com',
+    author = 'Barry Melton',
+    author_email = 'barry.melton@gmail.com',
     packages = find_packages(),
-    #package_data = find_package_data('technopedia', only_in_packages=False),
     include_package_data=True,
     install_requires = [
         # 'Django==1.4',
@@ -122,7 +121,6 @@ setup(
         'Intended Audience :: Developers',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        'Topic :: Internet :: WWW/HTTP',
     ],
     zip_safe = False,
 )
