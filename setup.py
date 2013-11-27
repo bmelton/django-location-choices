@@ -100,12 +100,12 @@ def find_package_data(
 README = """
 Django location choices is a simple tuple, prepopulated with countries and states for use in Django models as CHOICES values
 """
-VERSION = __import__("django-location-choices").__version__
+VERSION = __import__("django_location_choices").__version__
 
 setup(
-    name = "django-location-choices",
+    name = "django_location_choices",
     version = VERSION,
-    url = 'http://github.com/bmelton/django-location-choices/',
+    url = 'http://github.com/bmelton/django_location_choices/',
     description = "Django location choices is a simple tuple, prepopulated with countries and states for use in Django models as CHOICES values",
     long_description = README,
     author = 'Barry Melton',
